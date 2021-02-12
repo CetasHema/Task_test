@@ -1,0 +1,132 @@
+body {
+ background-color: antiquewhite; 
+    padding: 0;
+    
+ 
+}
+
+.start {
+
+    margin-top: 212px;
+    text-align: center;
+}
+
+.start>h1 {
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    color: lightcoral;
+}
+
+.start>p {
+    font-size: 20px;
+}
+
+.img {
+    position: relative;
+   
+}
+
+
+.navi {
+    margin-bottom: 9px;
+}
+
+.quiz {
+    font-size: 20px;
+    background-color: lightcoral;
+    margin-top: 10%;
+
+    margin-right: 78%;
+}
+
+.page2 {
+    margin-left: 25%;
+    margin-right: 30%;
+}
+
+.nm {
+    margin-top: 20px;
+
+
+}
+
+.name {
+    border: none;
+    border-bottom: 2px solid;
+    width: 100%;
+    height: 40px;
+    margin: 9px;
+    margin-right: 25%;
+    margin-right: 35%;
+    background-color: antiquewhite;
+}
+
+.page3 {
+    margin-left: 25%;
+    margin-right: 20%;
+
+}
+
+.radio {
+
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.radio:hover {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.word {
+    margin-left: 2px;
+}
+
+.page4 {
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.page5 {
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.page6 {
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.page7 {
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.page8 {
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.page9 {
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.page10 {
+    margin-left: 25%;
+    margin-right: 20%;
+
+}
+
+.page11 {
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.mail {
+    margin-top: 10%;
+}
