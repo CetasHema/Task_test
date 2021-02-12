@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -23,13 +23,14 @@
             <h2>WONDERING IF TECH IS RIGHT FOR YOU?</h2>
             <P>Take this 3-minuts quiz and find out</P><br>
             <a href="#" class="btn btn-dark" onclick="return show('page2','page1');">START</a>
-            <p>or <br>press <b>ENTER</b></p>
+            <!-- <a href="#" style="color: black;">or press <b> ENTER</b></a> -->
+            <!-- <p>or <br>press <b>ENTER</b></p> -->
         </div>
 
-        <div class="img">
+         <div class="img">
             <img src="https://skillcrush.com/wp-content/mu-plugins/skillcrush-core/build/images/quiz-lady.png"
-                height="400px" width="300px">
-        </div>
+                height="800px" width="500px">
+        </div> 
     </div>
 
     <!-- page two -->
@@ -42,7 +43,7 @@
         <input type="text" class="name" id="name" placeholder="Type your name here..."><br>
 
 
-        <br><a href="#" class="btn btn-dark" onclick="return show('page3','page2');">Next</a>
+        <br><a href="#" id="ref" class="btn btn-dark" onclick="return show('page3','page2');">Next</a>
         <p>or <br>press <b>ENTER</b></p>
     </div>
 
@@ -50,7 +51,7 @@
     <div id="page3" class="page3" style="display:none;">
         <p class="quiz">Question 2 of 10</p>
         <h2>Where are you in your career?</h2><br>
-
+<form action="/action_page.php">
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="career" value="I know what career I want, and I need to learn some skills" style=" margin-left: 2px;"
                 id="flexRadioDefault1">
@@ -62,47 +63,48 @@
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="career" value="I like my career—or, at least, I don't HATE it—but I keep wondering if there's something more
             out there." style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
                 &nbsp&nbsp I like my career—or, at least, I don't HATE it—but I keep wondering if there's something more
                 out there.
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="career" value="I took a break from my career, and now I'm ready to get back into the workforce" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">
                 &nbsp&nbsp I took a break from my career, and now I'm ready to get back into the workforce
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="career" value="I want to make a career change, but I'm also super busy." style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault4">
+            <label class="form-check-label" for="flexRadioDefault4">
                 &nbsp&nbsp I want to make a career change, but I'm also super busy.
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="career" value="I'm just starting out." style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
                 &nbsp&nbsp I'm just starting out.
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="career" value="I’m burnt out from going into an office every day and ready to make my own hours" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label word" for="flexRadioDefault1">
+                id="flexRadioDefault6">
+            <label class="form-check-label word" for="flexRadioDefault6">
                 &nbsp&nbsp I’m burnt out from going into an office every day and ready to make my own hours
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="career"  value="Other (please enter)!" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault7">
+            <label class="form-check-label" for="flexRadioDefault7">
                 &nbsp&nbsp Other (please enter)!
             </label>
         </div>
+    </form>
 
         <br><a href="#" class="btn btn-dark" onclick="return show('page4','page3');">Next</a>
         <p>or <br>press <b>ENTER</b></p>
@@ -117,53 +119,53 @@
 
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="about" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault11">
+            <label class="form-check-label" for="flexRadioDefault11">
                 &nbsp&nbsp I don’t know what I'm good at!
             </label>
         </div>
 
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="about" value="I want to be my own boss, set my own schedule and choose my own work." style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault12">
+            <label class="form-check-label" for="flexRadioDefault12">
                 &nbsp&nbsp I want to be my own boss, set my own schedule and choose my own work.
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="about" value="I want to do work that I actually care about even something that positively contributes
             to the world." style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault13">
+            <label class="form-check-label" for="flexRadioDefault13">
                 &nbsp&nbsp I want to do work that I actually care about even something that positively contributes
                 to the world.
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="about" value="I’d like to be able to work from home — or anywhere but a cubicle!" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault14">
+            <label class="form-check-label" for="flexRadioDefault14">
                 &nbsp&nbsp I’d like to be able to work from home — or anywhere but a cubicle!
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="about" value="I’ve taken a break from my career, and I'm not sure how to get back into it." style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault15">
+            <label class="form-check-label" for="flexRadioDefault15">
                 &nbsp&nbsp I’ve taken a break from my career, and I'm not sure how to get back into it.
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="about" value="Money! Specifically, I'd like more of it." style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label word" for="flexRadioDefault1">
+                id="flexRadioDefault16">
+            <label class="form-check-label word" for="flexRadioDefault16">
                 &nbsp&nbsp Money! Specifically, I'd like more of it.
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="about"  value="Other (please enter)!" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault17">
+            <label class="form-check-label" for="flexRadioDefault17">
                 &nbsp&nbsp Other (please enter)!
             </label>
         </div>
@@ -194,6 +196,7 @@
 
         <br><a href="#" class="btn btn-dark" onclick="return show('page6','page5');">Next</a>
         <p>or <br>press <b>ENTER</b></p>
+        
     </div>
 
     <!-- page six -->
@@ -204,44 +207,44 @@
 
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="friend" value="A born leader" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault31">
+            <label class="form-check-label" for="flexRadioDefault31">
                 &nbsp&nbsp A born leader
             </label>
         </div>
 
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="friend" value="A charming introvert." style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault32">
+            <label class="form-check-label" for="flexRadioDefault32">
                 &nbsp&nbsp A charming introvert.
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="friend" value="A numbers nerd" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault33">
+            <label class="form-check-label" for="flexRadioDefault33">
                 &nbsp&nbsp A numbers nerd
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="friend" value="A people person" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault34">
+            <label class="form-check-label" for="flexRadioDefault34">
                 &nbsp&nbsp A people person
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="friend" value="A total perfectionist" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault35">
+            <label class="form-check-label" for="flexRadioDefault35">
                 &nbsp&nbsp A total perfectionist
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="friend" value="An innovative creative" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label word" for="flexRadioDefault1">
+                id="flexRadioDefault36">
+            <label class="form-check-label word" for="flexRadioDefault36">
                 &nbsp&nbsp An innovative creative
             </label>
         </div>
@@ -257,8 +260,8 @@
         <h2>What's your biggest concern about learning tech skills?</h2><br>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="skills" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault41">
+            <label class="form-check-label" for="flexRadioDefault41">
                 &nbsp&nbsp Even if I learned the skills, with my weird resume, why would they hire me over a computer
                 science grad?
             </label>
@@ -266,36 +269,36 @@
 
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="skills" value="I don't have the time to learn new skills." style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault42">
+            <label class="form-check-label" for="flexRadioDefault42">
                 &nbsp&nbsp I don't have the time to learn new skills.
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="skills" value="I dream of a remote job—but do those jobs REALLY exist for, you know, REAL people like me?" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault43">
+            <label class="form-check-label" for="flexRadioDefault43">
                 &nbsp&nbsp I dream of a remote job—but do those jobs REALLY exist for, you know, REAL people like me?
             </label>
         </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="skills" value="It's too late in my career/life to make this big of a change." style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+                id="flexRadioDefault44">
+            <label class="form-check-label" for="flexRadioDefault44">
                 &nbsp&nbsp It's too late in my career/life to make this big of a change.
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="skills" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-                &nbsp&nbspLearning tech skills is expensive and I'm on a tight budget—I'm not sure it's worth it.
+            <input class="form-check-input" type="radio" name="skills" value="Learning tech skills is expensive and I'm on a tight budget—I'm not sure it's worth it." style=" margin-left: 2px;"
+                id="flexRadioDefault45">
+            <label class="form-check-label" for="flexRadioDefault45">
+                &nbsp&nbsp Learning tech skills is expensive and I'm on a tight budget—I'm not sure it's worth it.
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="skills" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label word" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="skills" value="My career is okay and learning tech skills is expensive—why should I rock the boat?" style=" margin-left: 2px;"
+                id="flexRadioDefault46">
+            <label class="form-check-label word" for="flexRadioDefault46">
                 &nbsp&nbsp My career is okay and learning tech skills is expensive—why should I rock the boat?
             </label>
         </div>
@@ -311,49 +314,51 @@
         <p class="quiz">Question 7 of 10</p>
         <h2>Picture the perfect workplace for you. What do you see?</h2><br>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="workplace" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="workplace" value="A bustling agency where I'm surrounded by incredible creative talent." style=" margin-left: 2px;"
+                id="flexRadioDefault51">
+            <label class="form-check-label" for="flexRadioDefault51">
                 &nbsp&nbsp A bustling agency where I'm surrounded by incredible creative talent.
             </label>
         </div>
 
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="workplace" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="workplace" value="A collaborative environment where I'm LEADING the team." style=" margin-left: 2px;"
+                id="flexRadioDefault52">
+            <label class="form-check-label" for="flexRadioDefault52">
                 &nbsp&nbsp A collaborative environment where I'm LEADING the team.
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="workplace" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="workplace" value="A collaborative environment where I'm a full-time member of a team working
+            shoulder-to-shoulder with fun." style=" margin-left: 2px;"
+                id="flexRadioDefault53">
+            <label class="form-check-label" for="flexRadioDefault53">
                 &nbsp&nbsp A collaborative environment where I'm a full-time member of a team working
                 shoulder-to-shoulder with fun.
 
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="workplace" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="workplace" value="A coworking spot! I work with my team sometimes in-person and then have the freedom to finish
+            my work." style=" margin-left: 2px;"
+                id="flexRadioDefault54">
+            <label class="form-check-label" for="flexRadioDefault54">
                 &nbsp&nbsp A coworking spot! I work with my team sometimes in-person and then have the freedom to finish
                 my work.
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="workplace" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="workplace" value="A video conference with coworkers on my screen… and the beach behind it." style=" margin-left: 2px;"
+                id="flexRadioDefault55">
+            <label class="form-check-label" for="flexRadioDefault55">
                 &nbsp&nbsp A video conference with coworkers on my screen… and the beach behind it.
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="workplace" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label word" for="flexRadioDefault1">
-                &nbsp&nbspMy Work at home in the morning, with time for kids' soccer practice in the afternoon.
+            <input class="form-check-input" type="radio" name="workplace" value="My Work at home in the morning, with time for kids' soccer practice in the afternoon." style=" margin-left: 2px;"
+                id="flexRadioDefault56">
+            <label class="form-check-label word" for="flexRadioDefault56">
+                &nbsp&nbsp My Work at home in the morning, with time for kids' soccer practice in the afternoon.
             </label>
         </div>
 
@@ -367,45 +372,45 @@
         <p class="quiz">Question 8 of 10</p>
         <h2>What are you most looking forward to with a new career in tech?</h2><br>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="tech" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="tech" value="A job I love doing with a team I love working with." style=" margin-left: 2px;"
+                id="flexRadioDefault61">
+            <label class="form-check-label" for="flexRadioDefault61">
                 &nbsp&nbsp A job I love doing with a team I love working with.
             </label>
         </div>
 
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="tech" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="tech" value="Earning enough income that I can clock out at 5pm - and hit the beach!" style=" margin-left: 2px;"
+                id="flexRadioDefault62">
+            <label class="form-check-label" for="flexRadioDefault62">
                 &nbsp&nbsp Earning enough income that I can clock out at 5pm - and hit the beach!
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="tech" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="tech" value="Earning one of those lucrative tech salaries." style=" margin-left: 2px;"
+                id="flexRadioDefault63">
+            <label class="form-check-label" for="flexRadioDefault63">
                 &nbsp&nbsp Earning one of those lucrative tech salaries.
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="tech" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="tech" value="Finally having a career that helps me do everything I love" style=" margin-left: 2px;"
+                id="flexRadioDefault64">
+            <label class="form-check-label" for="flexRadioDefault64">
                 &nbsp&nbsp Finally having a career that helps me do everything I love
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="tech" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="tech" value="Having a flexible schedule that doesn’t 1000% revolve around work!" style=" margin-left: 2px;"
+                id="flexRadioDefault65">
+            <label class="form-check-label" for="flexRadioDefault65">
                 &nbsp&nbsp Having a flexible schedule that doesn’t 1000% revolve around work!
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="tech" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label word" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="tech" value="Working with new clients everyday!" style=" margin-left: 2px;"
+                id="flexRadioDefault66">
+            <label class="form-check-label word" for="flexRadioDefault66">
                 &nbsp&nbsp Working with new clients everyday!
             </label>
         </div>
@@ -421,50 +426,50 @@
         <p class="quiz">Question 9 of 10</p>
         <h2>How quickly do you want to get a new job?</h2><br>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="job" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="job" value="ASAP — ideally in under 90 days." style=" margin-left: 2px;"
+                id="flexRadioDefault71">
+            <label class="form-check-label" for="flexRadioDefault71">
                 &nbsp&nbsp ASAP — ideally in under 90 days.
             </label>
         </div>
 
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="job" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="job" value="I don’t! Just a few new skills to start my side hustle." style=" margin-left: 2px;"
+                id="flexRadioDefault72">
+            <label class="form-check-label" for="flexRadioDefault72">
                 &nbsp&nbsp I don’t! Just a few new skills to start my side hustle.
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="job" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="job" value="In the next year." style=" margin-left: 2px;"
+                id="flexRadioDefault73">
+            <label class="form-check-label" for="flexRadioDefault73">
                 &nbsp&nbsp In the next year.
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="job" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="job"value="Never! I just want a side hustle :-)" style=" margin-left: 2px;"
+                id="flexRadioDefault74">
+            <label class="form-check-label" for="flexRadioDefault74">
                 &nbsp&nbsp Never! I just want a side hustle :-)
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="job" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="job" value="Within 3-6 months." style=" margin-left: 2px;"
+                id="flexRadioDefault75">
+            <label class="form-check-label" for="flexRadioDefault75">
                 &nbsp&nbsp Within 3-6 months.
             </label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="job" style=" margin-left: 2px;"
-                id="flexRadioDefault1">
-            <label class="form-check-label word" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="job" value="Within 9 months." style=" margin-left: 2px;"
+                id="flexRadioDefault76">
+            <label class="form-check-label word" for="flexRadioDefault76">
                 &nbsp&nbsp Within 9 months.
             </label>
         </div>
 
 
-        <br><a href="#" class="btn btn-dark" onclick="return show('page11','page10');">Next</a>
+        <br><a href="#" class="btn btn-dark" onclick="return show('page11','page10');" >Next</a>
         <p>or <br>press <b>ENTER</b></p>
     </div>
 
@@ -476,22 +481,75 @@
         <h5 style="opacity: .7;">(Don't worry, you can unsubscribe from our list anytime. But we think you'll like it!)
         </h5>
 
-        <input type="email" name="email" placeholder="Your email ID.."
-            class="email white col-7 col-md-4 col-lg-7 ml-3 form-control mail" id="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+        <input type="email" name="email" id="mail" placeholder="Your email ID.."
+            class="email white col-7 col-md-4 col-lg-7 ml-3 form-control mail" id="email" onblur="validateEmai(this);"
+         required>
 
-        <br><a href="#" class="btn btn-dark" onclick="return show('page12','page11');">Submit</a><br>
+        <br><a href="#" class="btn btn-dark" onclick="Result();">Submit</a><br>
 
         <p style="opacity: 0.5;">Skillcrush needs the contact information you provide to us to contact you about our
             products and services. You may unsubscribe from these communications at any time. For information on how to
             unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our
             Privacy Policy.</p>
     </div>
-
     <div id="page12" class="page12" style="display:none;">
-        
-        <h1>Thank you......</h1>
-       
+        <p class="quiz">Result of the Quiz</p>
+        <h2>Thank you.. Check your answers below..</h2>    
+    <table id="tab" class="tab" style="border:1px solid black;">
+        <thead>
+            <th style="text-align: center;">Corect Answer</th>
+            <th style="text-align: center;">Your Answer</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="tr11"></td>
+                <td id="tr12"> </td>
+            </tr>
+            <tr>
+                <td id="tr21"></td>
+                <td id="tr22"> </td>
+            </tr>
+            <tr>
+                <td id="tr31"></td>
+                <td id="tr32"> </td>
+            </tr>
+            <tr>
+                <td id="tr41"></td>
+                <td id="tr42"> </td>
+            </tr>
+            <tr>
+                <td id="tr51"></td>
+                <td id="tr52"> </td>
+            </tr>
+            <tr>
+                <td id="tr61"></td>
+                <td id="tr62"> </td>
+            </tr>
+            <tr>
+                <td id="tr71"></td>
+                <td id="tr72"> </td>
+            </tr>
+            <tr>
+                <td id="tr81"></td>
+                <td id="tr82"> </td>
+            </tr>
+            <tr>
+                <td id="tr91"></td>
+                <td id="tr92"> </td>
+            </tr>
+            <tr>
+                <td id="tr101"></td>
+                <td id="tr102"> </td>
+            </tr>
+                     
+        </tbody>
+    </table>
+    <div id="Progress_Status"> 
+        <div id="myprogressBar"></div> 
+      </div> 
+    </div>  
+
+    
 
 <script src="test.js"></script>
    
