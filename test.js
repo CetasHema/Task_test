@@ -159,6 +159,7 @@ function validate(r)
         }
 
         }
+       
     }
 }  
 
@@ -179,13 +180,13 @@ function Result() {
     document.getElementById("page12").style.display = 'block';
 
     var ans1 = "I took a break from my career, and now I'm ready to get back into the workforce";
-    var ans2 = "I want to do work that I actually care about even something that positively contributes to the world.";
+    var ans2 = "I’d like to be able to work from home — or anywhere but a cubicle!";
     var ans3 = '7';
     var ans4 = 'A people person';
     var ans5 = "It's too late in my career/life to make this big of a change.";
     var ans6 = "A collaborative environment where I'm LEADING the team.";
     var ans7 = "Finally having a career that helps me do everything I love";
-    var ans8 = " Within 3-6 months.";
+    var ans8 = "Within 3-6 months.";
 
     var name = document.getElementById("name").value;
     console.log(name);
@@ -220,27 +221,43 @@ function Result() {
     var mark = 2;
     if (ans1 == career) {
         mark++;
+        console.log("hema");
+        console.log(mark);
     }
     if (ans2 == about) {
         mark++;
+        console.log("he");
+        console.log(mark);
     }
     if (ans3 == slct) {
         mark++;
+        console.log("hem");
+        console.log(mark);
     }
     if (ans4 == friend) {
         mark++;
+        console.log("hema");
+        console.log(mark);
     }
     if (ans5 == skills) {
         mark++;
+        console.log("hemaa");
+        console.log(mark);
     }
     if (ans6 == workplace) {
         mark++;
+        console.log("hemaaa");
+        console.log(mark);
     }
     if (ans7 == tech) {
         mark++;
+        console.log("hemaaaaaa");
+        console.log(mark);
     }
     if (ans8 == job) {
         mark++;
+        console.log("hemaaaaaaaaaa");
+        console.log(mark);
     }
     console.log(mark);
 
@@ -267,21 +284,25 @@ function Result() {
     document.getElementById("tr82").innerHTML = tech;
     document.getElementById("tr92").innerHTML = job;
     document.getElementById("tr102").innerHTML = mail;
+    document.getElementById("res").innerHTML="Your score is:"+ mark +"/10";
 
-    var element = document.getElementById("myprogressBar");
-    var width = 1;
-    var identity = setInterval(scene, 10);
-    function scene() {
-        if (width >= 100) {
-            clearInterval(identity);
-        } else {
-            width++;
-            element.style.width = width + '%';
-        }
-    }
+        mark=mark*10;
+    $('.progress-bar').css('width',+mark+'%').attr('aria-valuenow', mark);
 }
 
-
+function mark() { 
+    var element = document.getElementById("myprogressBar");    
+    var width = 1; 
+    var identity = setInterval(scene, 10); 
+    function scene() { 
+      if (width >= 100) { 
+        clearInterval(identity); 
+      } else { 
+        width++;  
+        element.style.width = width + '%';  
+      } 
+    } 
+}
 
 // function emailvalid(emailField) {
 //     var mail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
