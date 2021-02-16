@@ -164,9 +164,10 @@ body {
 }
 .tab,td,tr,th
 {
-    border: 2px solid black;
+    border: 2px solid rgb(211, 190, 190);
     padding: 3px;
     margin-top: 10%;
+    margin-right:  10%;;
 
 }
 
@@ -197,4 +198,8 @@ margin-top: 20px;
   .name:hover{
 box-shadow: burlywood;
 transform: scale(1,1);
+  }
+  prograss::-webkit-progress-value
+  {
+      background:rgb(252, 250, 250);
   }

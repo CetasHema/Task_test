@@ -91,7 +91,7 @@ function validate(r)
             if(skills[i].checked){ 
                 skl= skills[i].value;
                 return true;
-            }
+        }
         }
         if(skl==""){
             alert("Select any one from the given option");
